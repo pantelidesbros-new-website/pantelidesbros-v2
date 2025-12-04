@@ -1,6 +1,8 @@
 import React from "react";
-import projects from "../data/projects.js";
+import * as ProjectsModule from "../data/projects.js";
 import { Link } from "react-router-dom";
+
+const projects = ProjectsModule.default ?? ProjectsModule.projects ?? [];
 
 export default function Projects() {
   return (
@@ -22,4 +24,3 @@ export default function Projects() {
     </section>
   );
 }
-
