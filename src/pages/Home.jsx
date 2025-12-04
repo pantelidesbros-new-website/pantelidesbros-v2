@@ -1,6 +1,9 @@
 import React from "react";
-import projects from "../data/projects.js";
+import * as ProjectsModule from "../data/projects.js";
 import { Link } from "react-router-dom";
+
+// defensive: support either default export or named export { projects }
+const projects = ProjectsModule.default ?? ProjectsModule.projects ?? [];
 
 export default function Home() {
   return (
