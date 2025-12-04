@@ -1,4 +1,4 @@
-export const projects = [
+const projects = [
   {
     id: 1,
     title: "Project 1",
@@ -18,3 +18,5 @@ export const projects = [
     description: "Description for project 3."
   }
 ];
+
+export default projects;
